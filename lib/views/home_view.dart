@@ -17,12 +17,14 @@ class HomeView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             const Appicon(
+              size: 70,
               color: kcolor2,
             ),
             const SizedBox(
               height: 16,
             ),
             const Appname(
+              size: 30,
               color: kcolor2,
             ),
             const Text(

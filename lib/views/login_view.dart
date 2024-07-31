@@ -42,9 +42,11 @@ class _LoginViewState extends State<LoginView> {
                   height: 100,
                 ),
                 const Appicon(
+                  size: 70,
                   color: kcolor1,
                 ),
                 const Appname(
+                  size: 30,
                   color: kcolor1,
                 ),
                 const SizedBox(
