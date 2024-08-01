@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:world_news/firebase_options.dart';
+import 'package:world_news/views/categorynews.dart';
+import 'package:world_news/views/feedbackview.dart';
 import 'package:world_news/views/home_view.dart';
 import 'package:world_news/views/login_view.dart';
 import 'package:world_news/views/news_view.dart';
@@ -26,6 +28,8 @@ class Worldnews extends StatelessWidget {
         LoginView.id: (context) => const LoginView(),
         SignupView.id: (context) => const SignupView(),
         NewsView.id: (context) => const NewsView(),
+        Categorynews.id: (context) => const Categorynews(),
+        Feedbackview.id: (context) => const Feedbackview(),
       },
       debugShowCheckedModeBanner: false,
       initialRoute: HomeView.id,

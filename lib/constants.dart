@@ -6,3 +6,5 @@ const Color kcolor2 = Colors.white;
 const String loginid = 'loginid';
 const String signupid = 'signupid';
 const String newsid = 'newsid';
+const String categoryviewid = 'categoryid';
+const String feedbackid = 'feedbackid';
