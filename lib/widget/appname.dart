@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:world_news/constants.dart';
 
 class Appname extends StatelessWidget {
   const Appname({super.key, required this.color, required this.size});

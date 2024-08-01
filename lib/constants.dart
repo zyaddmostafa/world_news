@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:world_news/models/categorymodel.dart';
-import 'package:world_news/views/news_view.dart';
 
 const String homeid = 'homeid';
 const Color kcolor1 = Color(0xFF0F6DDC);
