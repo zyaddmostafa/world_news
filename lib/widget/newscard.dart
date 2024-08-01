@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:world_news/models/articalmodel.dart';
 
 class Newscard extends StatelessWidget {
-  const Newscard({super.key});
-
+  const Newscard({super.key, required this.articalmodel});
+  final Articalmodel articalmodel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -12,20 +13,22 @@ class Newscard extends StatelessWidget {
         child: Column(
           children: [
             Image.network(
-                'https://static.guim.co.uk/sys-images/Sport/Pix/pictures/2010/12/2/1291294801429/2022-World-Cup-006.jpg'),
-            const Padding(
+              articalmodel.image ??
+                  'https://upload.wikimedia.org/wikipedia/commons/7/75/No_image_available.png',
+            ),
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: const Text(
-                'World Cup 2018 and 2022: every country which has ever hosted the championship',
+              child: Text(
+                articalmodel.title,
                 maxLines: 2,
-                style: TextStyle(color: Colors.black, fontSize: 20),
+                style: const TextStyle(color: Colors.black, fontSize: 20),
               ),
             ),
-            const Padding(
+            Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: const Text(
-                'World Cup 2018 and 2022: every country which has ever hosted the championship',
-                style: TextStyle(color: Colors.grey, fontSize: 15),
+              child: Text(
+                articalmodel.subtitle ?? '',
+                style: const TextStyle(color: Colors.grey, fontSize: 15),
               ),
             )
           ],

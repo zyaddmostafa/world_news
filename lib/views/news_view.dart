@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:world_news/constants.dart';
 import 'package:world_news/widget/categorylistview.dart';
 import 'package:world_news/widget/customappbar.dart';
+import 'package:world_news/widget/newcardlistbuilder.dart';
 import 'package:world_news/widget/newscard.dart';
 import 'package:world_news/widget/newscardlistview.dart';
 
@@ -25,7 +26,7 @@ class NewsView extends StatelessWidget {
               height: 25,
             ),
           ),
-          Newscardlistview(),
+          Newcardlistbuilder(categoryname: 'sport'),
         ],
       ),
     );
